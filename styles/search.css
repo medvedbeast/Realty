@@ -1,0 +1,421 @@
+/* #region FILTER */
+.filter
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 25px;
+    background-color: #ffffff;
+}
+.filter .content .input.container
+{
+    height: 30px;
+}
+.filter .content .input.container.floated
+{
+    float: left;
+}
+.filter .content input[type="text"]
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #cccccc;
+}
+.filter .content input[type="button"]
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: white;
+    background-color: #0826c8;
+}
+.filter .content input[type="number"]
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #cccccc;
+}
+.filter .content input[type="number"]:invalid
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+.filter .content input[type="range"]
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.filter .content .label
+{
+    width: 100%;
+    padding-bottom: 10px;
+    clear: both;
+}
+.label.margined
+{
+    margin-top: 25px;
+}
+#categories
+{
+    margin-top: 25px;
+}
+.category
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.category .title
+{
+    line-height: 30px;
+    width: 30%;
+    float: left;
+}
+.category .input
+{
+    width: 70%;
+    float: left;
+}
+.category .input select
+{
+    width: 100%;
+    height: 30px;
+    background: #cccccc;
+    border: 0;
+}
+#characteristics
+{
+    display: none;
+}
+#characteristics.visible
+{
+    display: block;
+}
+.characteristic
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.characteristic .title
+{
+    line-height: 30px;
+    width: 30%;
+    float: left;
+}
+.characteristic .input
+{
+    width: 70%;
+    float: left;
+}
+.characteristic .input input, .characteristic .input select
+{
+    width: 100%;
+    background-color: #cccccc;
+    height: 30px;
+    border: 0;
+}
+.characteristic .input input:invalid
+{
+    border: 2px solid red;
+}
+.characteristic .input .title
+{
+    text-align: center;
+    width: 10%;
+    float: left;
+}
+.characteristic .input .input
+{
+    width: 40%;
+    float: left;
+}
+.characteristic .input .input input
+{
+    width: 100%;
+    background-color: #cccccc;
+    height: 30px;
+    border: 0;
+}
+.characteristic .input .input input:invalid
+{
+    border: 2px solid red;
+}
+#show
+{
+    display: none;
+}
+#show.visible
+{
+    display: block;
+}
+#queryContainer
+{
+    width: calc(80% - 10px);
+    margin-right: 10px;
+}
+#searchContainer
+{
+    width: 20%;
+}
+#previousPageContainer
+{
+    width: 5%;
+    margin-right: 10px;
+}
+#pageContainer
+{
+    width: 2%;
+    margin-right: 10px;
+}
+#nextPageContainer
+{
+    width: 5%;
+}
+#showCharacteristics
+{
+    float: right;
+}
+#showCharacteristics input
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* #endregion FILTER */
+/* #region RESULTS */
+.header.container 
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 25px;   
+}
+.results
+{
+    margin: 25px 1vw;
+    margin-bottom: 0px;
+}
+.results .content
+{
+    background-color: #ffffff;
+}
+.result
+{
+    width: calc(50% - 12.5px);
+    margin-bottom: 25px;
+    overflow: hidden;
+    float: left;
+}
+.result.left
+{
+    margin-right: 12.5px;
+}
+.result.right
+{
+    margin-left: 12.5px;
+}
+.result .content
+{
+    background-color: #ffffff;
+}
+.result .content .image.container
+{
+    width: calc(40% - 10px);
+    height: auto;
+    background-color: #ffffff;
+    float: left;
+}
+.result .content .image
+{
+    width: 100%;
+    margin-right: 10px;
+    height: 275px;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.result .content .text
+{
+    width: 60%;
+    float: left;
+}
+.result .content .text .location
+{
+    height: 75px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.result .content .text .description
+{
+    max-height: 200px;
+    overflow: hidden;
+}
+/**/
+.paid .header p
+{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.paid.container
+{
+    margin: 25px 1vw;
+    margin-bottom: 0;
+}
+.paid .result
+{
+    background-color: #ffffff;
+    margin-bottom: 0;
+}
+.paid .result.left
+{
+    width: calc(25% - 12.5px);
+    margin-right: 12.5px;
+}
+.paid .result.center
+{
+    width: calc(25% - 25px);
+    margin-right: 12.5px;
+    margin-left: 12.5px;
+}
+.paid .result.right
+{
+    width: calc(25% - 12.5px);
+    margin-left: 12.5px;
+}
+.paid .result .image
+{
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pages
+{
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    width: calc(100% - 2vw - 50px);
+    margin: 0 1vw 25px 1vw;
+}
+#label2
+{
+    padding-bottom: 10px;
+}
+.input.container
+{
+    float: left;
+    height: 30px;
+}
+#previousPageContainer2
+{
+    margin-right: 10px;
+}
+#nextPageContainer2
+{
+    margin-left: 10px;
+}
+#pageContainer2
+{
+    width: 2%;
+}
+#previousPageContainer2, #nextPageContainer2
+{
+    width: 5%;
+}
+#previousPageContainer2 input, #nextPageContainer2 input
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: white;
+    background-color: #0826c8;
+}
+#pageContainer2 input
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #cccccc;
+}
+#pageContainer2 input:invalid
+{
+    background-color: red;
+}
+/**/
+/* #endregion RESULTS */
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+    select
+    {
+        font-size: 20px;
+        height: 40px !important;
+        font-weight: normal;
+    }
+    option
+    {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    input
+    {
+        font-size: 20px;
+    }
+    .input.container
+    {
+        height: 40px !important;
+    }
+    .filter
+    {
+        margin: 25px 1vw;
+        margin-bottom: 0px;
+    }
+    .header.container
+    {
+        margin: 25px 1vw;
+    }
+    .results
+    {
+        margin: 25px 1vw;
+        margin-bottom: 0px;
+    }
+    .result
+    {
+        width: 100%;
+    }
+    .result.left
+    {
+        margin-right: 0;
+    }
+    .result.right
+    {
+        margin-left: 0;
+    }
+    .paid.container
+    {
+        margin: 25px 1vw;
+        margin-bottom: 0;
+    }
+}

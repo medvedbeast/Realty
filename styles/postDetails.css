@@ -1,0 +1,42 @@
+/* #region POST */
+.post.container
+{
+    margin: 25px 1vw;
+}
+.post .content
+{
+    background-color: #ffffff;
+}
+.post .content .image
+{
+    height: 500px;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post .content .text .description.no-margin
+{
+    padding: 0;
+}
+.post .content .text .description
+{
+    padding-top: 25px;
+}
+.post .content .text .credentials
+{
+    padding-top: 25px;
+    text-align: right;
+}
+/* #endregion POST*/
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+    .post.container
+    {
+        margin: 25px 1vw;
+    }
+}

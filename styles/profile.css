@@ -1,0 +1,299 @@
+/* #region TAB*/
+.profile.container
+{
+    margin: 25px 1vw;
+}
+.tab.container
+{
+    float: none;
+    padding: 0;
+    cursor: default;
+    background-color: #0826c8;
+}
+.tab.header
+{
+    width: auto;
+    padding: 10px 25px;
+    background-color: #0826c8;
+    float: left;
+    cursor: pointer;
+}
+.tab.selected
+{
+    background-color: #ffffff;
+    color: black;
+}
+.content.container
+{
+    padding: 25px;
+    background-color: #ffffff;
+}
+.content .tab.content
+{
+    width: 100%;
+    cursor: default;
+    padding: 0;
+    float: none;
+    display: none;
+}
+.content .tab.content.selected
+{
+    display: block;
+}
+/* #endregion TAB */
+/* #region PROFILE*/
+#user_info
+{
+    margin: 25px 1vw;
+}
+#user_info .content
+{
+    background-color: #ffffff;
+}
+#user_info .content .image
+{
+    width: 30%;
+    height: 300px;
+    float: left;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#user_info .content .description
+{
+    width: calc(70% - 25px);
+    margin-left: 25px;
+    float: left;
+}
+#user_info .content .description .info .title
+{
+    width: 40%;
+    float: left;
+}
+#user_info .content .description .info .value
+{
+    width: 60%;
+    float: left;
+}
+#user_info .content .edit
+{
+    margin-top: 25px;
+    float: left;
+}
+#user_info .content .edit input
+{
+    color: #ffffff;
+    width: 100%;
+    background-color: #0826c8;
+    border: 0;
+    padding: 10px 25px;
+}
+/* #endregion PROFILE*/
+/* #region ADD_OFFER */
+.category
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.category .title
+{
+    line-height: 30px;
+    width: 30%;
+    float: left;
+}
+.category .input
+{
+    width: 70%;
+    float: left;
+}
+.category .input select
+{
+    width: 100%;
+    height: 30px;
+    background: #cccccc;
+    border: 0;
+}
+.characteristic
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.characteristic .input input:invalid
+{
+    border: 2px solid red;
+}
+.characteristic .title
+{
+    line-height: 30px;
+    width: 30%;
+    float: left;
+}
+.characteristic .input
+{
+    width: 70%;
+    float: left;
+}
+.characteristic .input input, .characteristic .input select
+{
+    width: 100%;
+    background-color: #cccccc;
+    height: 30px;
+    border: 0;
+}
+.characteristic .input input[type="button"]
+{
+    height: auto;
+    color: white;
+    padding: 10px 25px;
+    background-color: #0826c8;
+}
+.characteristic .input input[type="file"]
+{
+    display: none;
+}
+.characteristic .input textarea
+{
+    font-size: inherit;
+    font-family: calibri;
+    width: 100%;
+    background-color: #cccccc;
+    height: 250px;
+    border: 0;
+}
+.confirm input
+{
+    padding: 10px 25px;
+    color: white;
+    background-color: #0826c8;
+    border: 0;
+}
+.file
+{
+    background-color: #ffffff;
+    color: black;
+    border: 4px solid #0826c8 !important;
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+}
+.file.success
+{
+    color: white !important;
+    background-color: green !important;
+}
+.file.error
+{
+    color: white !important;
+    background-color: red !important;
+}
+.file.closing
+{
+    border-bottom-width: 4px !important;
+}
+.file .description
+{
+    padding: 10px 25px;
+    padding-right: 12.5px;
+    cursor: pointer;
+    float: left;
+    width: calc(90% - 37.5px);
+}
+.file .description:hover
+{
+    background-color: #0826c8;
+    color: white;
+}
+.file .button
+{
+    padding: 10px 0;
+    cursor: pointer;
+    float: right;
+    width: 10%;
+    text-align: center;
+}
+.file .button:hover
+{
+    background-color: #0826c8;
+    color: white;
+}
+.hidden
+{
+    display: none;
+}
+/* #endregion ADD_OFFER */
+/* #region OFFER */
+#offerContainer
+{
+    margin: 25px 1vw;
+}
+.result
+{
+    float: none;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.result .content
+{
+    background-color: #ffffff;
+}
+.result .content .image.container
+{
+    width: calc(40% - 10px);
+    height: auto;
+    background-color: #ffffff;
+    float: left;
+}
+.result .content .image
+{
+    width: 100%;
+    height: 275px;
+    margin-right: 10px;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.result .content .button
+{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: #0826c8;
+    color: white;
+    float: left;
+}
+.result .content .text
+{
+    width: 60%;
+    height: 275px;
+    float: left;
+}
+.result .content .text .location
+{
+    max-height: 20%;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.result .content .text .description
+{
+    height: 80%;
+    overflow: hidden;
+}
+/* #endregion OFFER */
+@media all and (max-width: 1024px)
+{
+    #user_info
+    {
+        margin: 25px 1vw;
+    }
+    .profile.container
+    {
+        margin: 25px 1vw;
+    }
+    #offerContainer
+    {
+        margin: 25px 1vw;
+    }
+}

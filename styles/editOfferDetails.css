@@ -1,0 +1,183 @@
+.offer.container
+{
+    margin: 25px 1vw;
+}
+.offer .content
+{
+    background-color: #ffffff;
+}
+.characteristic.container
+{
+    width: auto;
+}
+.category
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.category .title
+{
+    line-height: 30px;
+    width: 30%;
+    float: left;
+}
+.category .input
+{
+    width: 70%;
+    float: left;
+}
+.category .input select
+{
+    width: 100%;
+    height: 30px;
+    background: #cccccc;
+    border: 0;
+}
+.characteristic
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.characteristic .input input:invalid
+{
+    border: 2px solid red;
+}
+.characteristic .title
+{
+    line-height: 30px;
+    width: 30%;
+    float: left;
+}
+.characteristic .input
+{
+    width: 70%;
+    float: left;
+}
+.characteristic .input input, .characteristic .input select
+{
+    width: 100%;
+    background-color: #cccccc;
+    height: 30px;
+    border: 0;
+}
+.characteristic .input input[type="button"]
+{
+    height: auto;
+    color: white;
+    padding: 10px 25px;
+    background-color: #0826c8;
+}
+.characteristic .input input[type="file"]
+{
+    display: none;
+}
+.characteristic .input textarea
+{
+    font-size: inherit;
+    font-family: calibri;
+    width: 100%;
+    background-color: #cccccc;
+    height: 90px;
+    border: 0;
+}
+.confirm input
+{
+    padding: 10px 25px;
+    width: 100%;
+    margin-bottom: 25px;
+    color: white;
+    background-color: #0826c8;
+    border: 0;
+}
+.file
+{
+    background-color: #ffffff;
+    color: black;
+    border: 4px solid #0826c8 !important;
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+}
+.file.success
+{
+    color: white !important;
+    background-color: green !important;
+}
+.file.error
+{
+    color: white !important;
+    background-color: red !important;
+}
+.file.closing
+{
+    border-bottom-width: 4px !important;
+}
+.file .description
+{
+    padding: 10px 25px;
+    padding-right: 12.5px;
+    cursor: pointer;
+    float: left;
+    width: calc(90% - 37.5px);
+}
+.file .description:hover
+{
+    background-color: #0826c8;
+    color: white;
+}
+.file .button
+{
+    padding: 10px 0;
+    cursor: pointer;
+    float: right;
+    width: 10%;
+    text-align: center;
+}
+.file .button:hover
+{
+    background-color: #0826c8;
+    color: white;
+}
+.hidden
+{
+    display: none;
+}
+.image.container
+{
+    width: 100%;
+    float: none;
+    margin: 0;
+    height: auto;
+}
+.image
+{
+    margin-top: 25px;
+    width: calc(100% / 2);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+.image .remove, .image .preview, .image .enlarge
+{
+    padding: 25px;
+    cursor: pointer;
+    background-color: #cccccc;
+    float: left;
+}
+.image .preview.selected
+{
+    background-color: #0826c8;
+}
+.image .preview:hover, .image .remove:hover, .image .enlarge:hover
+{
+    background-color: #0826c8;
+}
+/**/
+@media all and (max-width: 1024px)
+{
+    .offer.container
+    {
+        margin: 25px 1vw;
+    }
+}

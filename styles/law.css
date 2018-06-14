@@ -1,0 +1,47 @@
+/* #region LAW */
+.law.container
+{
+    margin: 25px 1vw;
+}
+.law .content
+{
+    background-color: #ffffff;
+}
+li
+{
+    padding-bottom: 10px;
+}
+li.clear
+{
+    padding-bottom: 0px;
+}
+li.level_1
+{
+    list-style: none;
+    font-weight: bold;
+}
+li.level_2
+{
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+li.level_3
+{
+    list-style: element;
+    list-style-position: inside;
+}
+/* #endregion LAW*/
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+    .law.container
+{
+    margin: 25px 1vw;
+}
+}

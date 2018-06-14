@@ -1,0 +1,208 @@
+/* #region OFFER */
+.details.container
+{
+    margin: 25px 1vw;
+}
+.details.container .content
+{
+    background-color: #ffffff;
+}
+.gallery.container .preview
+{
+    width: calc(50% - 12.5px);
+    height: 600px;
+    margin-right: 25px;
+    background-color: #cccccc;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery.container .preview.wide
+{
+    width: 100%;
+    float: none;
+}
+.list
+{
+    width: calc(50% - 12.5px);
+    height: 600px;
+    background-color: #cccccc;
+    display: table;
+}
+.list.row
+{
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    /*display: table-row;*/
+}
+.list.item
+{
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table-cell;
+    margin: 0;
+    width: calc(100% / 3);
+    height: 100%;
+}
+.description.container .title
+{
+    float: left;
+    width: calc(50% - 12.5px);
+    margin-left: 12.5px;
+    margin-top: 25px;
+}
+.description.container .title.wide.no-margin
+{
+    margin-top: 0;
+}
+.description.container .title.wide
+{
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+}
+.description.container .description
+{
+    float: left;
+    width: calc(50% - 12.5px);
+    margin-top: 25px;
+    margin-left: 12.5px;
+}
+.description.container .description.wide
+{
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+}
+.characteristics
+{
+    float: left;
+    width: calc(50% - 12.5px);
+    margin-right: 12.5px;
+}
+.characteristics .characteristic.group
+{
+    margin-top: 25px;
+}
+.characteristics .characteristic .title
+{
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    float: left;
+}
+.characteristics .characteristic .unit
+{
+    width: 50%;
+    float: left;
+}
+.characteristics .characteristic .unit .item
+{
+    padding: 5px 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    float: left;
+    background-color: #0826c8;
+    cursor: pointer;
+}
+.characteristics .characteristic .value
+{
+    width: 50%;
+    float: left;
+    line-height: 30px;
+}
+.video
+{
+    margin-top: 25px;
+    height: 600px;
+}
+.map.container
+{
+    margin: 25px 1vw;
+}
+.map.container .content
+{
+    background-color: #ffffff;
+}
+.map.container .content .map
+{
+    height: 600px;
+    wdith: 100%;
+}
+.header.container 
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 25px;   
+}
+/* #endregion OFFER */
+/* #region OWNER */
+.owner.container
+{
+    margin: 25px 1vw;
+}
+.owner .content
+{
+    background-color: #ffffff;
+}
+.owner .content .image
+{
+    width: 30%;
+    height: 300px;
+    float: left;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.owner .content .description
+{
+    width: calc(70% - 25px);
+    margin-left: 25px;
+    float: left;
+}
+.owner .content .description .info .title
+{
+    width: 40%;
+    float: left;
+}
+.owner .content .description .info .value
+{
+    width: 60%;
+    float: left;
+}
+/* #endregion OWNER */
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+    .details.container
+    {
+        margin: 25px 1vw;
+    }
+    .header.container
+    {
+        margin: 25px 1vw;
+    }
+    .map.container
+    {
+        margin: 25px 1vw;
+    }
+    .owner.container
+    {
+        margin: 25px 1vw;
+    }
+}

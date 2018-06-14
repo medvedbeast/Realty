@@ -1,0 +1,59 @@
+/* #region CONTACTS */
+.contacts.container
+{
+    margin: 25px 1vw;
+    margin-bottom: 0;
+}
+#content
+{
+    margin: 0 1vw;
+    margin-bottom: 25px;
+}
+.user.card
+{
+    margin-top: 25px;
+    background-color: #ffffff;
+}
+.user.card .image
+{
+    width: 30%;
+    height: 300px;
+    float: left;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.user.card .description
+{
+    width: calc(70% - 25px);
+    margin-left: 25px;
+    float: left;
+}
+.user.card .description .info .title
+{
+    width: 40%;
+    float: left;
+}
+.user.card .description .info .value
+{
+    width: 60%;
+    float: left;
+}
+/* #endregion CONTACTS*/
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+    .contacts.container
+    {
+        margin: 25px 1vw;
+    }
+    #content
+    {
+        margin: 0 1vw;
+        margin-bottom: 25px;
+    }
+}

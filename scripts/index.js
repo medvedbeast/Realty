@@ -1,78 +1,87 @@
-var action;
-var type;
-
-function OnPageLoaded()
-{
-    GetPosts(0);
-}
-
-function OnColumnClick(sender, index)
-{
-    action = index;
-    $("#" + sender.id).addClass("highlighted");
-    $(".column.center.visible.half-wide:not(#" + sender.id + ")").removeClass("highlighted");
-    var wrapper = $(".wrapper");
-    wrapper.removeClass("wrapped");
-    wrapper.addClass("unwrapped");
-    if (sender.id == "buy")
-    {
-        $("#hidden_column_1").removeClass("half-wide");
-        $("#hidden_column_1").addClass("third-wide");
-        $("#hidden_column_2").removeClass("half-wide");
-        $("#hidden_column_2").addClass("third-wide");
-        $("#hidden_column_3").removeClass("invisible");
-        $("#hidden_column_3").addClass("third-wide");
-    }
-    else
-    {
-        if (sender.id == "rent")
-        {
-            $("#hidden_column_1").removeClass("third-wide");
-            $("#hidden_column_1").addClass("half-wide");
-            $("#hidden_column_2").removeClass("third-wide");
-            $("#hidden_column_2").addClass("half-wide");
-            $("#hidden_column_3").removeClass("third-wide");
-            $("#hidden_column_3").addClass("invisible");
-        }
-    }
-}
-
-function OnPostPageNumberClicked(page)
-{
-    GetPosts(page);
-}
-
-function GetPosts(page)
-{
-    var request = $.ajax(
-        {
-            type: "get",
-            url: "modules/post_module.php",
-            data: "current_page=" + page,
-            async: false,
-            success: function (data)
-            {
-                $("#news_container").html(data);
-            }
-        });
-}
-
-function OnTypeClick(index)
-{
-    type = index;
-    document.location.href = "commerce.php?action=" + action + "&type=" + type;
-}
-
-function SendMail()
-{
-    var request = $.ajax(
-            {
-                type: "POST",
-                url: "/redactor/database_functions.php",
-                data: {function: 22, to: "sanches999@ukr.net", from: $("#mail").val(), name: $("#name").val(), telephone: $("#telephone").val(), question: $("#question").val()},
-                success: function ()
-                {
-                    alert("Спасибо! Ваше сообщение отправлено. В скором времени мы с Вами свяжемся.");
-                }
-            });
+var currentPage = -1;
+var totalPages = -1;
+var postsPerPage = 8;
+
+function OnBodyLoaded()
+{
+    GetPostPreviews(0);
+}
+
+function GetPostCount()
+{
+    var request = $.ajax(
+            {
+                type: "POST",
+                url: "core/functions.php",
+                data: {function: "GetPostCount", keywords: $("#query").val()},
+                success: function (data)
+                {
+                    totalPages = Math.ceil(data / postsPerPage);
+                    $("#totalPages").html(totalPages);
+                    $("#totalPages_2").html(totalPages);
+                    
+                }
+            });
+}
+
+function GetPostPreviews(page)
+{
+    GetPostCount();
+    var request = $.ajax(
+            {
+                type: "POST",
+                url: "core/functions.php",
+                data: {function: "GetPostPreviews", keywords: $("#query").val(), start: page * postsPerPage, quantity: postsPerPage, ownerId: 0},
+                success: function (data)
+                {
+                    if (data == 0)
+                    {
+                        alert("Поиск не дал результатов! Попробуйте повторить поиск с другими параметрами!");
+                        $("#searchResults").html("");
+                    }
+                    else
+                    {
+                        $("#searchResults").html(data);
+                    }
+                    $("#currentPage").html(page + 1);
+                    $("#currentPage_2").html(page + 1);
+                    currentPage = page;
+                }
+            });
+}
+
+function OnPreviousPageClicked()
+{
+    if (currentPage - 1 >= 0)
+    {
+        GetPostPreviews(currentPage - 1);
+        currentPage -= 1;
+    }
+}
+
+function OnNextPageClicked()
+{
+    if (currentPage + 1 < totalPages)
+    {
+        GetPostPreviews(currentPage + 1);
+        currentPage += 1;
+    }
+}
+
+function OnPageNumberEntered(sender, event)
+{
+    if ((event.key == "enter" && event.type == "keyup") || event.type == "blur")
+    {
+        var newPage = $(sender).val();
+        if (newPage > 0 && newPage <= totalPages)
+        {
+            GetPostPreviews(newPage - 1);
+        }
+        $(sender).val("");
+    }
+}
+
+function OnSearchClicked()
+{
+    GetPostPreviews(0);
 }
