@@ -1,0 +1,207 @@
+body
+{
+    font-family: Calibri;
+    color: gray;
+}
+.page
+{
+    width: 1024px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 5px 5px 15px;
+}
+.menu_item
+{
+    padding-right: 25px;
+    color: white;
+    text-shadow: 0px 1px 4px black, 0px 0px 4px black, 0px -1px 4px black, 1px 0px 4px black, 0px 0px 4px black, -1px 0px 4px black;
+}
+.site_logo
+{
+    color: white;
+    font-size: 50px;
+    vertical-align: bottom;
+    padding-left: 25px;
+    padding-top: 25px;
+    text-shadow: 0px 1px 4px black, 0px 0px 4px black, 0px -1px 4px black, 1px 0px 4px black, 0px 0px 4px black, -1px 0px 4px black;
+}
+.site_description
+{
+    padding-left: 25px;
+    padding-bottom: 25px;
+    color: white;
+    text-shadow: 0px 1px 4px black, 0px 0px 4px black, 0px -1px 4px black, 1px 0px 4px black, 0px 0px 4px black, -1px 0px 4px black;
+}
+a, a:hover, a:visited
+{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+.wide
+{
+    width: 100%;
+}
+.half-wide
+{
+    width: 50%;
+}
+.third-wide
+{
+    width: 33%;
+}
+.quarter-wide
+{
+    width: 25%;
+}
+accent
+{
+    color: red;
+}
+normal
+{
+    color: gray;
+}
+heading
+{
+    color: black;
+}
+.left
+{
+    text-align: left;
+}
+.center
+{
+    text-align: center;
+}
+.right
+{
+    text-align: right;
+}
+.column
+{
+    color: white;
+    text-shadow: 0px 1px 4px black, 0px 0px 4px black, 0px -1px 4px black, 1px 0px 4px black, 0px 0px 4px black, -1px 0px 4px black;
+    float: left;
+    height: 250px;
+    line-height: 250px;
+    transition: all 0.5s ease-out;
+    font-size: 30px;
+}
+.column.visible:hover
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.highlighted
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    text-shadow: 0px 1px 4px black, 0px 0px 4px black, 0px -1px 4px black, 1px 0px 4px black, 0px 0px 4px black, -1px 0px 4px black;
+    text-decoration: underline;
+}
+.unwrapped
+{
+    height: 250px;
+    line-height: 250px;
+}
+.wrapped 
+{
+    height: 0px;
+}
+.wrapper
+{
+    color: white;
+    text-shadow: 0px 1px 4px black, 0px 0px 4px black, 0px -1px 4px black, 1px 0px 4px black, 0px 0px 4px black, -1px 0px 4px black;
+    transition: all 0.25s ease-in;
+    clear: left;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.hidden
+{
+    height: 250px;
+    line-height: 250px;
+    float: left;
+    transition: all 0.75s ease-in-out;
+}
+.news_container
+{
+    padding: 25px 0px;
+}
+.post
+{
+    padding-top: 25px;
+}
+.post_title
+{
+    font-size: 30px;
+    text-align: left;
+}
+.post_title.padded
+{
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 25px;
+}
+.post_content
+{
+    text-align: justify;
+}
+.page_number
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+.page_number_selected
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.post_container
+{
+    padding-bottom: 25px;
+}
+.post_subscription
+{
+    padding-top: 25px;
+}
+.footer
+{
+    clear: left;
+    padding-bottom: 25px;
+}
+.invisible
+{
+    width: 0px;
+    overflow: hidden;
+}
+.header
+{
+    background-image: url("../images/header_background.jpg");
+    margin-bottom: 25px;
+}
+
+.imaged
+{
+    background-image: url(../images/center_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.selector
+{
+     
+}
+
+.country.selector
+{
+    height: 500px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.map.container
+{
+    width: 100%;
+    height: 100%;
+}
